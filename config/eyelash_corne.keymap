@@ -143,9 +143,18 @@
         layer_4 {
             bindings = <
 &trans  &kp DELETE  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp PG_UP                    &trans          &kp SLASH  &kp N7  &kp N8   &kp N9  &kp PLUS   &kp BACKSPACE
-&trans  &kp INS     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DN            &trans  &trans  &trans  &kp ASTRK  &kp N4  &kp N5   &kp N6  &kp MINUS  &kp HOME
-&trans  &trans      &trans          &trans          &trans           &trans     &trans            &trans          &trans     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp END
+&trans  &kp INS     &kp LEFT_ARROW  &kp LG(X)       &kp RIGHT_ARROW  &kp PG_DN            &trans  &trans  &trans  &kp ASTRK  &kp N4  &kp N5   &kp N6  &kp MINUS  &kp HOME
+&trans  &trans      &kp LG(C)       &kp DOWN_ARROW  &kp LG(V)        &trans     &trans            &trans          &trans     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp END
                                     &trans          &trans           &trans                                       &trans     &kp N0  &kp DOT
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
