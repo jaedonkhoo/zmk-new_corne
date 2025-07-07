@@ -82,6 +82,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <37 38>;
         };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -90,10 +95,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y                  &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N                  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &mt RIGHT_SHIFT ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -133,6 +138,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp DELETE  &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &kp PG_UP                    &trans          &kp SLASH  &kp N7  &kp N8   &kp N9  &kp PLUS   &kp BACKSPACE
+&trans  &kp INS     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DN            &trans  &trans  &trans  &kp ASTRK  &kp N4  &kp N5   &kp N6  &kp MINUS  &kp HOME
+&trans  &trans      &trans          &trans          &trans           &trans     &trans            &trans          &trans     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp END
+                                    &trans          &trans           &trans                                       &trans     &kp N0  &kp DOT
+            >;
         };
     };
 };
