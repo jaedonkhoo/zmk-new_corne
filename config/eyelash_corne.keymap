@@ -119,7 +119,7 @@
 &kp DELETE  &kp QUESTION                 &kp AMPERSAND        &kp ASTERISK          &kp MINUS             &kp PIPE                         &trans          &kp SLASH  &kp N7              &kp N8            &kp N9            &kp PLUS                 &kp BACKSPACE
 &kp TILDE   &mt LEFT_CONTROL UNDERSCORE  &mt LEFT_ALT DOLLAR  &mt LEFT_GUI PERCENT  &mt LEFT_SHIFT CARET  &kp BACKSLASH            &trans  &trans  &trans  &kp ASTRK  &mt RIGHT_SHIFT N4  &mt RIGHT_GUI N5  &mt RIGHT_ALT N6  &mt RIGHT_CONTROL EQUAL  &kp SINGLE_QUOTE
 &kp GRAVE   &trans                       &kp PLUS             &kp AT                &kp HASH              &trans         &trans            &trans          &kp COLON  &kp N1              &kp N2            &kp N3            &kp MINUS                &kp DOUBLE_QUOTES
-                                                              &trans                &trans                &trans                                           &trans     &kp N0              &kp DOT
+                                                              &trans                &tog 0                &trans                                           &trans     &kp N0              &kp DOT
             >;
         };
 
@@ -129,7 +129,7 @@
 &trans  &kp C_AC_SEARCH                         &kp C_PREV                         &kp C_PLAY_PAUSE      &kp C_NEXT            &kp C_VOLUME_UP                      &trans          &kp INSERT      &mkp LCLK  &kp UP_ARROW    &mkp RCLK        &kp PG_UP        &trans
 &trans  &kp LEFT_CONTROL                        &kp LEFT_ALT                       &kp LEFT_GUI          &kp LEFT_SHIFT        &kp C_VOLUME_DOWN            &trans  &trans  &trans  &kp PSCRN       &kp LEFT   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans
 &trans  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_MUTE         &trans            &trans          &kp SCROLLLOCK  &kp HOME   &kp DEL         &kp END          &kp PAUSE_BREAK  &trans
-                                                                                   &kp C_AC_SEARCH       &trans                &trans                                               &trans          &trans     &trans
+                                                                                   &kp C_AC_SEARCH       &trans                &trans                                               &trans          &tog 0     &trans
             >;
         };
 
