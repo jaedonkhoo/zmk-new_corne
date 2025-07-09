@@ -128,12 +128,6 @@
             key-positions = <1 2>;
             layers = <0>;
         };
-
-        toggle_layer_3 {
-            bindings = <&tog 3>;
-            key-positions = <43 46>;
-            layers = <3>;
-        };
     };
 
     keymap {
