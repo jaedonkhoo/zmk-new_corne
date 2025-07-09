@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
-  - {t: fn, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: fn, h: fn}
   - Z
   - X
   - C
@@ -176,9 +176,9 @@ layers:
   - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
-  - {t: BT CLR ALL, type: held}
+  - {t: fn, h: toggle, type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - $$mdi:progress-download$$
   - OUT USB
   - OUT BLE
@@ -191,10 +191,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [4, 3]
@@ -218,6 +218,3 @@ combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
-- p: [43, 46]
-  k: {t: fn, h: toggle}
-  l: [fn]
