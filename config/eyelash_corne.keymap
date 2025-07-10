@@ -35,29 +35,32 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        mo_tog: mo_tog {
+        mo_tog: momentary_hold_toggle_tap {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            label = "momentary hold toggle tap";
         };
 
-        tl_mt_left: tl_mt_left {
+        hml: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mt>, <&mt>;
+            label = "left home row mods";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <43 44 42 0 1 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 2 3 4>;
         };
 
-        tl_mt_right: tl_mt_right {
+        hmr: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            label = "right home row mods";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -136,10 +139,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB      &kp Q                       &kp W                   &kp E                   &kp R                     &kp T                             &kp UP                &kp Y      &kp U                       &kp I                     &kp O                     &kp P                            &kp BSPC
-&caps_word   &tl_mt_left LEFT_CONTROL A  &tl_mt_left LEFT_ALT S  &tl_mt_left LEFT_GUI D  &tl_mt_left LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &tl_mt_right RIGHT_SHIFT J  &tl_mt_right RIGHT_GUI K  &tl_mt_right RIGHT_ALT L  &tl_mt_right RIGHT_CONTROL SEMI  &kp SQT
-&mo_tog 3 3  &kp Z                       &kp X                   &kp C                   &kp V                     &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M                       &kp COMMA                 &kp DOT                   &kp FSLH                         &kp ESCAPE
-                                                                 &kp LEFT_SHIFT          &mo_tog 1 1               &kp SPACE                                               &kp ENTER  &mo_tog 2 2                 &kp RIGHT_SHIFT
+&kp TAB      &kp Q                &kp W           &kp E           &kp R             &kp T                             &kp UP                &kp Y      &kp U              &kp I            &kp O            &kp P                   &kp BSPC
+&caps_word   &hml LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&mo_tog 3 3  &kp Z                &kp X           &kp C           &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH                &kp ESCAPE
+                                                  &kp LEFT_SHIFT  &mo_tog 1 1       &kp SPACE                                               &kp ENTER  &mo_tog 2 2        &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -148,10 +151,10 @@
         lower_layer {
             display-name = "num_sym";
             bindings = <
-&kp DELETE  &kp QUESTION                         &kp AMPERSAND                &kp ASTERISK                  &kp MINUS                     &kp PIPE                         &trans          &kp SLASH  &kp N7                       &kp N8                     &kp N9                     &kp PLUS                          &kp BACKSPACE
-&kp TILDE   &tl_mt_left LEFT_CONTROL UNDERSCORE  &tl_mt_left LEFT_ALT DOLLAR  &tl_mt_left LEFT_GUI PERCENT  &tl_mt_left LEFT_SHIFT CARET  &kp BACKSLASH            &trans  &trans  &trans  &kp ASTRK  &tl_mt_right RIGHT_SHIFT N4  &tl_mt_right RIGHT_GUI N5  &tl_mt_right RIGHT_ALT N6  &tl_mt_right RIGHT_CONTROL EQUAL  &kp SINGLE_QUOTE
-&kp GRAVE   &trans                               &kp PLUS                     &kp AT                        &kp HASH                      &trans         &trans            &trans          &kp COLON  &kp N1                       &kp N2                     &kp N3                     &kp MINUS                         &kp DOUBLE_QUOTES
-                                                                              &trans                        &tog 1                        &trans                                           &trans     &kp N0                       &kp DOT
+&kp DELETE  &kp QUESTION                 &kp AMPERSAND        &kp ASTERISK          &kp MINUS             &kp PIPE                         &trans          &kp SLASH  &kp N7              &kp N8            &kp N9            &kp PLUS                 &kp BACKSPACE
+&kp TILDE   &mt LEFT_CONTROL UNDERSCORE  &mt LEFT_ALT DOLLAR  &mt LEFT_GUI PERCENT  &mt LEFT_SHIFT CARET  &kp BACKSLASH            &trans  &trans  &trans  &kp ASTRK  &mt RIGHT_SHIFT N4  &mt RIGHT_GUI N5  &mt RIGHT_ALT N6  &mt RIGHT_CONTROL EQUAL  &kp SINGLE_QUOTE
+&kp GRAVE   &trans                       &kp PLUS             &kp AT                &kp HASH              &trans         &trans            &trans          &kp COLON  &kp N1              &kp N2            &kp N3            &kp MINUS                &kp DOUBLE_QUOTES
+                                                              &trans                &tog 1                &trans                                           &trans     &kp N0              &kp DOT
             >;
         };
 
