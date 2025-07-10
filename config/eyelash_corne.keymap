@@ -139,10 +139,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB      &kp Q                &kp W           &kp E           &kp R             &kp T                             &kp UP                &kp Y      &kp U              &kp I            &kp O            &kp P                   &kp BSPC
-&caps_word   &hml LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&mo_tog 3 3  &kp Z                &kp X           &kp C           &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH                &kp ESCAPE
-                                                  &kp LEFT_SHIFT  &mo_tog 1 1       &kp SPACE                                               &kp ENTER  &mo_tog 2 2        &kp RIGHT_SHIFT
+&kp TAB      &kp Q                &kp W            &kp E            &kp R              &kp T                             &kp UP                &kp Y      &kp U               &kp I             &kp O            &kp P                    &kp BSPC
+&caps_word   &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr LEFT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp SQT
+&mo_tog 3 3  &kp Z                &kp X            &kp C            &kp V              &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M               &kp COMMA         &kp DOT          &kp FSLH                 &kp ESCAPE
+                                                   &kp LEFT_SHIFT   &mo_tog 1 1        &kp SPACE                                               &kp ENTER  &mo_tog 2 2         &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -151,10 +151,10 @@
         lower_layer {
             display-name = "num_sym";
             bindings = <
-&kp DELETE  &kp QUESTION                 &kp AMPERSAND        &kp ASTERISK          &kp MINUS             &kp PIPE                         &trans          &kp SLASH  &kp N7              &kp N8            &kp N9            &kp PLUS                 &kp BACKSPACE
-&kp TILDE   &mt LEFT_CONTROL UNDERSCORE  &mt LEFT_ALT DOLLAR  &mt LEFT_GUI PERCENT  &mt LEFT_SHIFT CARET  &kp BACKSLASH            &trans  &trans  &trans  &kp ASTRK  &mt RIGHT_SHIFT N4  &mt RIGHT_GUI N5  &mt RIGHT_ALT N6  &mt RIGHT_CONTROL EQUAL  &kp SINGLE_QUOTE
-&kp GRAVE   &trans                       &kp PLUS             &kp AT                &kp HASH              &trans         &trans            &trans          &kp COLON  &kp N1              &kp N2            &kp N3            &kp MINUS                &kp DOUBLE_QUOTES
-                                                              &trans                &tog 1                &trans                                           &trans     &kp N0              &kp DOT
+&kp DELETE  &kp QUESTION                  &kp AMPERSAND         &kp ASTERISK           &kp MINUS              &kp PIPE                         &trans          &kp SLASH  &kp N7               &kp N8             &kp N9            &kp PLUS                  &kp BACKSPACE
+&kp TILDE   &hml LEFT_CONTROL UNDERSCORE  &hml LEFT_ALT DOLLAR  &hml LEFT_GUI PERCENT  &hml LEFT_SHIFT CARET  &kp BACKSLASH            &trans  &trans  &trans  &kp ASTRK  &hmr RIGHT_SHIFT N4  &hmr RIGHT_GUI N5  &hmr LEFT_ALT N6  &hmr RIGHT_CONTROL EQUAL  &kp SINGLE_QUOTE
+&kp GRAVE   &trans                        &kp PLUS              &kp AT                 &kp HASH               &trans         &trans            &trans          &kp COLON  &kp N1               &kp N2             &kp N3            &kp MINUS                 &kp DOUBLE_QUOTES
+                                                                &trans                 &tog 1                 &trans                                           &trans     &kp N0               &kp DOT
             >;
         };
 
