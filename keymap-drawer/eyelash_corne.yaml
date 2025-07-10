@@ -15,10 +15,10 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:alpha-w-box$$
-  - {t: '&mt A', h: '&mt LEFT_CONTROL'}
-  - {t: '&mt S', h: '&mt LEFT_ALT'}
-  - {t: '&mt D', h: '&mt LEFT_GUI'}
-  - {t: '&mt F', h: '&mt LEFT_SHIFT'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -64,10 +64,10 @@ layers:
   - +
   - {t: '$$mdi:backspace$$', type: backspace}
   - '~'
-  - {t: '&mt UNDERSCORE', h: '&mt LEFT_CONTROL'}
-  - {t: '&mt DOLLAR', h: '&mt LEFT_ALT'}
-  - {t: '&mt PERCENT', h: '&mt LEFT_GUI'}
-  - {t: '&mt CARET', h: '&mt LEFT_SHIFT'}
+  - {t: _, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '%', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ^, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
