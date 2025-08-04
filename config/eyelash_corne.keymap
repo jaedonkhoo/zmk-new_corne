@@ -139,13 +139,13 @@
 
         Less_Than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <17 16 15>;
+            key-positions = <16 15>;
             layers = <0 1>;
         };
 
         Greater_Than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <23 24 25>;
+            key-positions = <24 25>;
             layers = <0 1>;
         };
     };
