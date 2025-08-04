@@ -218,9 +218,9 @@ combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
-- p: [17, 16, 15]
+- p: [16, 15]
   k: <
   l: [QWERTY, num_sym]
-- p: [23, 24, 25]
+- p: [24, 25]
   k: '>'
   l: [QWERTY, num_sym]
