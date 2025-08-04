@@ -26,6 +26,11 @@
     trigger-period-ms = <16>;
 };
 
+&sk {
+    quick-release;
+    release-after-ms = <500>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -134,13 +139,13 @@
 
         Less_Than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <17 18>;
+            key-positions = <17 16 15>;
             layers = <0 1>;
         };
 
         Greater_Than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <22 23>;
+            key-positions = <23 24 25>;
             layers = <0 1>;
         };
     };
