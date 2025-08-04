@@ -1,6 +1,6 @@
 ---
 include:
- -  board: eyelash_corne_left
+  - board: eyelash_corne_left
     shield: nice_view
     #snippet: zmk-usb-logging
   - board: eyelash_corne_right
