@@ -96,7 +96,7 @@
         compatible = "zmk,combos";
 
         Left_Parenthesis {
-            bindings = <&kt LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <4 3>;
             layers = <0 1>;
         };
